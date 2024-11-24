@@ -17,4 +17,4 @@ multiplicar(int(input("ingresa el primer numero: ")),int(input("ingresa el segun
 
 print("estoy en la rama Jessi")
 
-print("estoy en Github")
+print("estoy en Github desde la plataforma")
