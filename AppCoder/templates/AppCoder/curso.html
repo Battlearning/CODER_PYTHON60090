@@ -6,6 +6,14 @@ La Casa del Código | Cursos 🏫
 {% endblock  %}
 
 {% block content %}
-<h1>Nuestros cursos</h1>
-<p>Los mejores cursos de Latinoamerica </p>  
+ <h1>Nuestros cursos</h1>
+ <p>Los mejores cursos de Latinoamerica </p>  
+
+
+ <ul>
+ {% for curso in curso %}
+  <li>{{ curso.nombre }} - {{ curso.camada }}</li>
+ {% endfor %}
+ </ul>
+
 {% endblock  %}

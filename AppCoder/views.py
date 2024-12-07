@@ -17,10 +17,12 @@ from django.http import HttpResponse
 #CLASE 19 -------------------------------------------------------------
 
 def inicio(request):
-    return render(request, "AppCoder/index.html")
+      return render(request, "AppCoder/index.html")
 
 def curso(request):
-    return render(request, "AppCoder/curso.html")
+    curso = Curso.objects.all()
+    print(curso)
+    return render(request, "AppCoder/curso.html", {"curso": curso})
 
 def profesores(request):
     return render(request, "AppCoder/profesores.html")
