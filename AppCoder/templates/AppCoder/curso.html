@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Casa del Código</title>
-</head>
-<body>
-    <h1>Nuestros cursos</h1>
-    <p>Los mejores cursos de Latinoamerica </p> 
-</body>
-</html>
+{% extends 'AppCoder/base.html' %}  
+{% load static %}
+
+{% block title %}
+La Casa del Código | Cursos 🏫
+{% endblock  %}
+
+{% block content %}
+<h1>Nuestros cursos</h1>
+<p>Los mejores cursos de Latinoamerica </p>  
+{% endblock  %}
