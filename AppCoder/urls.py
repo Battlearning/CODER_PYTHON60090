@@ -9,6 +9,8 @@ urlpatterns = [
     path('profesores/', profesores, name="profesores"),
     path('estudiantes/', estudiantes,name="estudiantes"),
     path('entregables/', entregables,name="entregables"),
- 
+
+    path('curso-formulario',formulario_curso_api,name="curso-formulario"),
+     
 ] 
-   
+

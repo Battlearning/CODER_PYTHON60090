@@ -1,0 +1,49 @@
+{% extends 'AppCoder/base.html' %} 
+
+{% block title %}
+La Casa del Código | Formularios
+{% endblock  %}
+
+{% block content %}
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            
+
+           <!--  
+           -- formulario con html 
+           <form action="" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                  <label class="form-label">Curso</label>
+                  <input name="curso" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Comisión</label>
+                  <input name="comision" type="number " class="form-control">
+                </div>
+          
+                <button type="submit" class="btn btn-primary">Crear curso</button>
+          
+          </form> -->
+
+
+          <!-- -- formulario con django -->
+
+          <form action="" method="POST">
+          {% csrf_token %}
+
+          {{ form.as_p }}
+          <button type="submit" class="btn btn-primary">Crear curso</button>
+
+        </div>
+    </div>
+</div>
+    
+{% endblock  %}
+
+
+
+
+    
